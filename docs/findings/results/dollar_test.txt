@@ -1,0 +1,16 @@
+=== named weeks ===
+MSFT 2026-06-22 z_usd 1.88
+MSFT 2026-06-01 z_usd 1.86
+ORCL 2026-10-05 z_usd 2.41
+NVDA 2026-04-27 z_usd 2.63
+week of 2026-06-22 across tickers: median z_usd -0.01 | share of tickers z>=2 4 %
+weeks with the most tickers at z_usd>=2 (last 104): {Timestamp('2026-02-16 00:00:00'): 8, Timestamp('2026-01-19 00:00:00'): 8, Timestamp('2026-01-05 00:00:00'): 7, Timestamp('2026-02-23 00:00:00'): 7, Timestamp('2026-06-01 00:00:00'): 7}
+flag rate z_usd>=2: 3.1 % of ticker-weeks | z>=3: 0.5 %
+
+=== U1 institutions, Apr-Jun 2026 ===
+rank corr +0.423 | p 0.0001 | placebo p95 +0.275 | real at percentile 100.0 | PASS
+
+=== U2 buy test, 13 weeks ===
+(a) z_usd>=2 anywhere: n 163 | up 58% vs 60% | beat SPY 45% vs 47% | median ret +4.2% vs +4.0% | median excess -1.9% vs -0.9% | worst -35% | p 0.659 | halves -1.3/-2.4 | FAIL
+(b) z_usd>=2 near low : n 36 | up 67% vs 56% | beat SPY 50% vs 41% | median ret +5.0% vs +1.9% | median excess -0.0% vs -4.0% | worst -31% | p 0.306 | halves -2.4/+6.0 | FAIL
+(c) near low, no signal baseline check: n 211 | up 64% vs 59% | beat SPY 47% vs 47% | median ret +5.4% vs +3.8% | median excess -0.7% vs -0.9% | worst -33% | p 0.065 | halves -0.7/-0.7 | FAIL

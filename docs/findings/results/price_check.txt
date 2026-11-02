@@ -1,0 +1,19 @@
+tickers 60 | scored weeks 9684 | active weeks 924 (9.5%) | periods 334
+median position: active 76.1% vs other 69.7%
+in lower third of range: active 21.9% vs other 23.4%
+in upper third of range: active 58.0% vs other 52.5%
+mean gap vs own ticker +3.31 points | shuffled mean -0.04 | one-sided p 0.9600 | FAIL
+
+=== by period, where the price was at the start ===
+              periods  median_fwd13  pct_up  n_fwd
+zone                                              
+lower third        71           9.4    68.2     66
+middle third       76           3.6    59.4     69
+upper third       187           4.4    59.1    176
+
+=== same split, all scored weeks (what any week did) ===
+              weeks  median_fwd13  pct_up
+zone                                     
+lower third    2253           4.1    59.0
+middle third   2296           4.9    61.4
+upper third    5135           3.8    59.7

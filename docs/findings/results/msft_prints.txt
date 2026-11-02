@@ -1,0 +1,35 @@
+               rows  day_$B  cutoff_$M  blocks  block_$M  buy_$M  sell_$M  mid_$M  share_%        flag  net_$M
+day                                                                                                           
+2026-06-15   696489    8.87       8.87       3     47.56   32.36    15.20    0.00     0.54               17.16
+2026-06-16   694770    8.90       8.90       1     10.27   10.27     0.00    0.00     0.12               10.27
+2026-06-17   989550   12.64      12.64       2     38.94   26.08    12.86   -0.00     0.31               13.22
+2026-06-18   823672   14.96      14.96       2     62.79   17.90    44.88    0.00     0.42              -26.98
+2026-06-22  1021804   12.49      12.49       1     19.97    0.00    19.97    0.00     0.16              -19.97
+2026-06-24   756538   11.03      11.03       1     11.36    0.00    11.36    0.00     0.10              -11.36
+2026-06-25  1395963   19.65      19.65       3    124.80   53.67     0.00   71.13     0.64               53.67
+2026-06-26  1377147   25.67      25.67       6    300.66   35.09   142.73  122.84     1.17             -107.64
+2026-06-29   969830   15.52      15.52       4     75.86   18.77    18.47   38.62     0.49                0.31
+2026-06-30   707918   10.61      10.61       2     29.67   29.67     0.00    0.00     0.28               29.67
+2026-10-05   549417   10.17      10.17       3     48.94   19.53     0.00   29.42     0.48               19.53
+2026-10-06   473472    8.03       8.03       1     21.65   21.65     0.00    0.00     0.27               21.65
+2026-10-07   367464    5.90       5.90       5     36.90   21.23     0.00   15.67     0.63               21.23
+2026-10-08   470206    8.23       8.23       1     10.27   10.27     0.00    0.00     0.12               10.27
+2026-10-09   436403    7.42       7.42       3    351.59    0.00   351.59    0.00     4.74  SELL-SIDE? -351.59
+2026-10-12   466805    7.55       7.55       1     22.15   22.15     0.00    0.00     0.29               22.15
+2026-10-13   557162   10.33      10.33      10    265.53  122.44    49.57   93.52     2.57   BUY-SIDE?   72.86
+2026-10-14   532132    8.42       8.42       2     23.62   14.93     8.69    0.00     0.28                6.24
+2026-10-15   488278    8.89       8.89       1     10.91    0.00    10.91    0.00     0.12              -10.91
+2026-10-16   485104   10.25      10.25       0      0.00    0.00     0.00    0.00     0.00                0.00
+days 20
+LOW  Jun 15-30: days 10 | blocks 25 | block $722M | buy $224M | sell $265M | mid $233M | net $-42M | imbalance -0.09 | share of volume 0.51%
+HIGH Oct 5-16: days 10 | blocks 27 | block $792M | buy $232M | sell $421M | mid $139M | net $-189M | imbalance -0.29 | share of volume 0.93%
+PRE-SET RULE: FAIL (net positive at the low, and better than at the high)
+imbalance gap low minus high +0.20 | shuffle p 0.422 | blocks 52
+=== shortcut accuracy against complete days ===
+bars cover through 2026-10-26 | blocks with a bar 51 of 52
+top 10 minutes a day: 65% of blocks | 76% of block dollars | requests per stock-year if every day: 2510
+top 20 minutes a day: 82% of blocks | 91% of block dollars | requests per stock-year if every day: 5020
+top 40 minutes a day: 92% of blocks | 97% of block dollars | requests per stock-year if every day: 10040
+top 60 minutes a day: 94% of blocks | 97% of block dollars | requests per stock-year if every day: 15060
+calm-excess day rank vs block dollars across complete days:
+rank corr 0.31 | days 20

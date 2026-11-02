@@ -1,0 +1,4 @@
+                       active_%  10%_weeks_caught_%  entries  up_%  beat_SPY_%  med_ret  low_entries  low_up_%  low_med  13F_corr  n13F
+     old: block share       6.1                   5      165    65          56      6.3           36        67      5.8      0.47    60
+new: share or dollars       9.5                  17      219    61          52      4.9           46        70      7.0      0.37    60
+any week, same stocks: up 60% | median +4.0%

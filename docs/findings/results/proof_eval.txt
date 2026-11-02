@@ -1,0 +1,26 @@
+=== integrity ===
+tickers 60 | failed {} | venues ['BLKX', 'DLTA', 'LQNA', 'LQNT']
+scored ticker-weeks 9684 | flags z>=3 57
+
+=== G. ground truth: weeks with $25M+ documented insider sales ===
+event weeks 437 across 40 tickers | effect -0.031 z | 95% CI [-0.152, +0.084] | p 0.5814
+median z event -0.11 vs all -0.06 | z>=3 rate event 0.2% vs all 0.6% | z>=2 rate event 1.8% vs all 3.1%
+G FAIL
+
+=== P. placebo: same test on random ordinary venues ===
+ordinary pool 25 ['BIDS', 'BLUE', 'BNPX', 'CGXS', 'CODA', 'EBXL', 'IATS', 'ICBX', 'IEOS', 'INCR', 'ITGP', 'JPBX', 'JPMX', 'KCGM', 'LATS', 'MLIX', 'MSPL', 'MSRP', 'MSTX', 'ONEC', 'PURE', 'SGMT', 'STFX', 'UBSA', 'XSTM']
+placebo effect median +0.006 | p5 -0.219 | p95 +0.196 | real -0.031 sits at percentile 41.0
+P FAIL
+
+=== F. forward activity after z>=3 weeks (next 4 weeks) ===
+log total volume vs baseline: flags 57 | effect -0.017 | p 0.6434 | FAIL
+absolute 4-week return %: flags 57 | effect +0.014 | p 0.9879 | FAIL
+
+=== D. direction after flagged weeks ===
+accumulation n=32 mean +2.04% median +2.27% | distribution n=25 mean +2.05% median +1.52% | diff -0.01 | one-sided p 0.4998 | FAIL
+
+=== exploratory, not pre-registered ===
+sale >= $100M: weeks 142 | effect -0.069 | p 0.5053
+sale >= $250M: weeks 56 | effect +0.001 | p 0.9943
+z>=3 weeks that contain a $25M+ sale: 1.8% vs 4.5% of all scored weeks
+tickers with events: 40 | positive effect in 25 | most events: {'ABNB': 52, 'META': 52, 'LLY': 29, 'DELL': 35, 'NFLX': 28, 'HOOD': 28}
